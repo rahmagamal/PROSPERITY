@@ -1,0 +1,89 @@
+.section1 .hooper {
+  height: fit-content !important;
+  margin-top: 50px;
+}
+
+.section1 .contentt {
+  position: absolute;
+  top: 35%;
+  left: 18%;
+}
+
+.section1 .title {
+  color: white;
+  position: relative;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.section1 .subTitle {
+  color: white;
+}
+
+.section1 .coverBtn {
+  font-size: 14px;
+  background-color: #f5eeee08;
+  border-color: white;
+  color: #ffffff;
+}
+
+.section1 .coverBtn:hover {
+  color: black !important;
+  background-color: white !important;
+}
+
+.section1 .background {
+  position: relative;
+}
+
+.section1 .textColor {
+  color: #75b239;
+}
+
+.section1 .pic {
+  /* min-height: 500px !important; */
+  background-size: cover;
+  height: 93vh;
+}
+
+@media screen and (max-width: 762px) {
+  .section1 .title {
+    color: white;
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 0.7;
+    text-transform: uppercase;
+  }
+}
+
+.section2 .title {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  line-height: 1.4;
+  font-family: 'Dosis', sans-serif;
+  color: #111;
+}
+
+.section2 .word {
+  color: #777;
+  text-align: left;
+  font-size: 20px;
+}
+
+.section2 p, .section2 span {
+  font-size: 15px;
+  font-weight: 300;
+  color: #777;
+  line-height: 1.7;
+  text-align: left;
+  font-family: "Open Sans", arial, sans-serif;
+}
+
+.section2 span {
+  text-align: center;
+}
