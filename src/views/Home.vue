@@ -46,14 +46,78 @@
                 </p>
                 <p> Chemically speaking The Prosperity Trading & Contracting Est. has the right to shout the loudest in supplying all kinds of Chemicals, delivering the value and enhancing the customer satisfaction. Yes, it’s the chemistry that keeps us leaders in business.</p>
               </div>
+              <!---- policy ------->
                 <div class="container mt-5 setion2">
                     <h2 class="title">OUR POLICY</h2>
                     <span>To be a leader in the Trading business and continually improve our performance by providing quality product and services to our valued clients at a competitive price with customer satisfaction.</span>
                 </div>
 
        </div>
-       <!---- policy ------->
-         
+       
+         <!---------------section 3 ------------------>
+        <div class="container mt-5 section3  mb-5 animate__animated ">
+              <h2 class="title">our team</h2>
+              <div class="row">
+                <div class="col-md-3 " v-for="team in teams" :key="team.id">
+                  <div class="card">
+                       <h6>{{team.title}}</h6>
+                       <div class="heading">
+                           <ul>
+                        
+                         <li v-for="head in team.head" :key="head.head"><h4>{{head}}</h4></li>
+              
+                       </ul>
+                       </div>
+                       
+                       <ul>
+                         <li v-for="item in team.list" :key="item">{{item}}</li>
+                       </ul>
+
+                    </div>  
+                  <p class="underhead mt-3">{{team.title}}</p>
+                </div>
+              </div>
+
+               <div class="row">
+                <div class="col-md-3 offset-md-3" v-for="team in teamsTwo" :key="team.id">
+                  <div class="card">
+                       <h6>{{team.title}}</h6>
+                       <div class="heading">
+                           <ul>
+                        
+                         <li v-for="head in team.head" :key="head.head"><h4>{{head}}</h4></li>
+              
+                       </ul>
+                       </div>
+                       
+                       <ul>
+                         <li v-for="item in team.list" :key="item">{{item}}</li>
+                       </ul>
+
+                    </div>  
+                  <p class="underhead mt-3">{{team.title}}</p>
+                </div>
+                 <div class="col-md-3 " v-for="team in teamsThree" :key="team.id">
+                  <div class="card">
+                       <h6>{{team.title}}</h6>
+                       <div class="heading">
+                           <ul>
+                        
+                         <li v-for="head in team.head" :key="head.head"><h4>{{head}}</h4></li>
+              
+                       </ul>
+                       </div>
+                       
+                       <ul>
+                         <li v-for="item in team.list" :key="item">{{item}}</li>
+                       </ul>
+
+                    </div>  
+                  <p class="underhead mt-3">{{team.title}}</p>
+                </div>
+              </div>
+        </div>
+
               
 
 
@@ -75,6 +139,126 @@ export default {
       Slide,
        HooperNavigation,
        HooperPagination
+  },
+  data(){
+    return{
+         teams:[
+           {
+             id:1,
+             title:'sales&marketing' ,
+             head:['sales' , '& ' , 'marketing'],
+             list:[
+                        'Joseph Joy (Sr.Sales Manager)',
+                         'Jayan Gopalan (Sales Manager)',
+                        ' Saleesh Surendran(Sales Executive)',
+                         'Emy Martin (Sales Executive)',
+                         'Dayvis John (Sales Engineer)',
+                        ' Jithin Tom (Sales Engineer)',
+                        ' Ayesha Khalifa (Sales Administrator)',
+                         'Daisy Mae',
+             ]
+           },
+            {
+             id:2,
+             title:'FINANCE' ,
+              head:['FINANCE'],
+              list:[
+              
+                 ' Shiju Chereman (Manager/Account/Finance)',
+                  'Bineesh Kumar (Accountant)',
+                  'Floria Talavera (Accountant)',
+                  'Vinod K George (Assistant)',
+              ]
+           },
+           {
+             id:3,
+             title:'hr team' ,
+              head:['hr'],
+              list:[
+                'Fatima Abdulla (Manager)',
+                  'Amina Mubarak (PR)',
+                  'Fadheela Abdulla (PR)',
+                  'Dale Eslin Vaz (HR Consultant)',
+              ]
+           },
+            {
+             id:4,
+             title:'PURCHASING' ,
+              head:['PURCHASING'],
+              list:[
+                 'Abdulla Isa Al-Moosa (ED)',
+                  "Shibu M John (GM)",
+                  "Omana Eapen",
+                  'Elvira Francisco'
+              ]
+           },
+           {
+             id:5,
+             title:'LAB' ,
+              head:['LAB'],
+              list:[
+                 'Deepa Bronson'
+              ]
+           },
+            {
+             id:6,
+             title:'SAFETY & SECURITY' ,
+              head:['SAFETY AND SECURITY'],
+              list:[
+                 'Mohan Bharath (Safety Officer)',
+                  'John Britto',
+                  'Gurjit Singh',
+                  'Gurjit Sidhu',
+                  'Munna Ali',
+              ]
+           },
+           {
+             id:7,
+             title:'LOGISTICS' ,
+              head:['LOGISTICS'],
+              list:[
+               ' Jiju (Supervisor)',
+                'Fathima Abdulla',
+               ' Mayyadah Abdulsattar',
+              ]
+           },
+           {
+             id:8,
+             title:'QUALITY CONTROL' ,
+              head:['QUALITY CONTROL'],
+              list:[
+               "Abdulla Isa Al-Moosa (ED)",
+                'Shibu M John (GM)',
+              ]
+           },
+           
+         ],
+         teamsTwo:[
+            {
+             id:9,
+             title:'WAREHOUSE & MAINTENANCE' ,
+             head:['WAREHOUSE' , '& ' , 'MAINTENANCE'],
+             list:[
+                   'John Britto',
+                    'Sanjeev KV',
+                    'Amir Ahmed',
+                    'Nasir Ahmed'
+             ]
+           },
+          
+         ],
+         teamsThree:[
+            {
+             id:10,
+             title:'STORES' ,
+             head:['STORES'],
+             list:[
+                  'Mohd Shareef',
+                  'Jithin Tom (Sales Engineer)'
+             ]
+           },
+         ]
+    }
   }
 }
 </script>

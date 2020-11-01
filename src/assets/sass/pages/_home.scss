@@ -55,8 +55,12 @@
           line-height: 0.7;
           text-transform: uppercase;
           }
+          .hooper{
+            margin-top: unset;
+          }
     }
 }
+/**** section 2 **/
 
 .section2{
     .title{
@@ -88,4 +92,82 @@
         text-align:center
 
     }
+}
+
+
+/*** section 3 ***/
+
+.section3{
+  .title{
+    font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        line-height: 1.4;
+        font-family: 'Dosis', sans-serif;
+        color: #111;
+  }
+
+  .card{
+  //   animation-name: mymove;
+  //   animation-duration: 2s;
+  // animation-iteration-count: 1;
+  animation: backInUp; 
+  animation-duration: 2s; 
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000000;
+    text-align: left;
+    height: 320px;
+    padding: 3%;
+    background-color: #000000 ;
+    line-height: 1.8;
+    h6{
+      text-align: center;
+      font-family: 'Dosis', arial, sans-serif;
+       text-transform: uppercase;
+       letter-spacing: 0.2em;
+       line-height: 1.4;
+       color: #111;
+    }
+    .heading{
+      
+      color: white;
+      font-size: 18px;
+      position: absolute;
+      left: 0;
+      top: 40%;
+        text-align: center;
+        z-index: 99;
+      li{
+        display: block;
+       h4{ 
+       
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+       }
+
+      }
+    }
+    
+  }
+  .card:hover{
+    background-color: #ededed;
+    border-color: rgb(237, 237, 237);
+
+  }
+  .underhead{
+    font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: #777;
+  text-align: center;
+  }
+}
+
+@keyframes mymove {
+  from {top: 200px;}
+  to {top: 0px;}
 }
