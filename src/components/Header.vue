@@ -21,10 +21,10 @@
                             <line x1="0" y1="0" x2="50" y2="0" style="stroke:#75b239;stroke-width:2" />
                           </svg> -->
                          <li class="list"> <a href="#aboutUs"> ABOUT </a></li>
-                         <li class="list"> <a href="#"> Products </a></li>
-                         <li class="list"> <a href="#"> WHY CHOOSE US </a></li>
-                         <li class="list"> <a href="#"> CAREERS </a></li>
-                         <li class="list"> <a href="#"> CONTACT US</a></li>
+                         <li class="list"> <a href="#products"> Products </a></li>
+                         <li class="list"> <a href="#choose"> WHY CHOOSE US </a></li>
+                         <li class="list"> <a href="#careers"> CAREERS </a></li>
+                         <li class="list"> <a href="#contact"> CONTACT US</a></li>
 
 
                      </ul>

@@ -118,8 +118,28 @@
               </div>
         </div>
 
-              
+          <!---SECTION4 ----->    
+          <div class="container mt-3 section4" id="products">
+             <h2 class="title">products</h2>
+                <div class="row">
+                  <div class="col-md-3 mt-3" v-for="img in image" :key="img+1" >
+                    <img  :src="img.img"  class="image" />
+                    <h6>{{img.text}}</h6>
+                
+                  </div>
 
+                </div>
+               
+
+          </div>
+           
+           <!---section 5 -------->
+           <div class="conatiner mt-5 section5" id='choose'>
+                 <h2 class="title">WHY CHOOSE US?</h2>
+                 <div class="row">
+                         <div class="col-md-4"></div>
+                 </div>
+           </div>
 
   </div>
 </template>
@@ -140,6 +160,7 @@ export default {
        HooperNavigation,
        HooperPagination
   },
+ 
   data(){
     return{
          teams:[
@@ -257,8 +278,38 @@ export default {
                   'Jithin Tom (Sales Engineer)'
              ]
            },
-         ]
+         ],
+       
+             image:[
+               {img:require("../assets/images/img1.jpg"),
+               text:'Industrial and Commodity Chemicals'
+               },
+               {img:require("../assets/images/img2.jpg") ,
+               text:'Water Treatment chemicals'},
+               {img:require("../assets/images/img4.jpg") ,
+               text:'Laboratory Chemicals & Equipment'},
+               {img:require("../assets/images/img3.jpg") ,
+               text:'Swimming Pools Chemicals'},
+               {img:require("../assets/images/img5.jpg") ,
+               text:'Laundry & Cleaning Products'},
+               {img:require("../assets/images/img6.jpg") ,
+               text:'Medical Supplies.'},
+               {img:require("../assets/images/img7.jpg") ,
+               text:'Agriculture Products'},
+               {img:require("../assets/images/img8.jpg") ,
+               text:'Safety Products'},
+              
+
+             ],
+        
+       
     }
-  }
+  },
+   mounted(){
+    
+    //  this.image="img1.jpg"
+   
+  },
+
 }
 </script>
