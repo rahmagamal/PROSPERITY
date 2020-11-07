@@ -1,15 +1,31 @@
-.section1 .hooper {
+.home {
+  overflow: hidden;
+  /**** section 2 **/
+  /*** section 3 ***/
+}
+
+.home .title {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  line-height: 1.4;
+  font-family: 'Dosis', sans-serif;
+  color: #111;
+}
+
+.home .section1 .hooper {
   height: fit-content !important;
   margin-top: 50px;
 }
 
-.section1 .contentt {
+.home .section1 .contentt {
   position: absolute;
   top: 35%;
-  left: 18%;
+  left: 8%;
 }
 
-.section1 .title {
+.home .section1 .title {
   color: white;
   position: relative;
   font-size: 48px;
@@ -18,68 +34,61 @@
   text-transform: uppercase;
 }
 
-.section1 .subTitle {
+.home .section1 .subTitle {
   color: white;
 }
 
-.section1 .coverBtn {
+.home .section1 .coverBtn {
   font-size: 14px;
   background-color: #f5eeee08;
   border-color: white;
   color: #ffffff;
 }
 
-.section1 .coverBtn:hover {
+.home .section1 .coverBtn:hover {
   color: black !important;
   background-color: white !important;
 }
 
-.section1 .background {
+.home .section1 .background {
   position: relative;
 }
 
-.section1 .textColor {
+.home .section1 .textColor {
   color: #75b239;
 }
 
-.section1 .pic {
+.home .section1 .pic {
   /* min-height: 500px !important; */
   background-size: cover;
   height: 93vh;
 }
 
 @media screen and (max-width: 762px) {
-  .section1 .title {
+  .home .section1 .title {
     color: white;
     position: relative;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
-    line-height: 0.7;
+    line-height: 1.9;
     text-transform: uppercase;
   }
-  .section1 .hooper {
-    margin-top: unset;
+  .home .section1 .hooper {
+    margin-top: 40px;
+  }
+  .home .section1 .contentt {
+    top: 45%;
+    left: 6%;
   }
 }
 
-/**** section 2 **/
-.section2 .title {
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  line-height: 1.4;
-  font-family: 'Dosis', sans-serif;
-  color: #111;
-}
-
-.section2 .word {
+.home .section2 .word {
   color: #777;
   text-align: left;
   font-size: 20px;
 }
 
-.section2 p, .section2 span {
+.home .section2 p, .home .section2 span {
   font-size: 15px;
   font-weight: 300;
   color: #777;
@@ -88,22 +97,11 @@
   font-family: "Open Sans", arial, sans-serif;
 }
 
-.section2 span {
+.home .section2 span {
   text-align: center;
 }
 
-/*** section 3 ***/
-.section3 .title {
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  line-height: 1.4;
-  font-family: 'Dosis', sans-serif;
-  color: #111;
-}
-
-.section3 .card {
+.home .section3 .card {
   animation: backInUp;
   animation-duration: 2s;
   position: relative;
@@ -112,13 +110,14 @@
   font-weight: 300;
   color: #000000;
   text-align: left;
-  height: 320px;
+  border-radius: 4%;
+  height: 250px;
   padding: 3%;
   background-color: #000000;
   line-height: 1.8;
 }
 
-.section3 .card h6 {
+.home .section3 .card h6 {
   text-align: center;
   font-family: 'Dosis', arial, sans-serif;
   text-transform: uppercase;
@@ -127,31 +126,33 @@
   color: #111;
 }
 
-.section3 .card .heading {
+.home .section3 .card .heading {
   color: white;
   font-size: 18px;
   position: absolute;
-  left: 0;
+  left: 9%;
   top: 40%;
   text-align: center;
   z-index: 99;
 }
 
-.section3 .card .heading li {
+.home .section3 .card .heading li {
   display: block;
+  text-align: center;
 }
 
-.section3 .card .heading li h4 {
+.home .section3 .card .heading li h4 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  text-align: center;
 }
 
-.section3 .card:hover {
+.home .section3 .card:hover {
   background-color: #ededed;
   border-color: #ededed;
 }
 
-.section3 .underhead {
+.home .section3 .underhead {
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.4em;
@@ -168,27 +169,75 @@
   }
 }
 
-.section4 .title {
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  line-height: 1.4;
-  font-family: 'Dosis', sans-serif;
-  color: #111;
-}
-
-.section4 .image {
+.home .section4 .image {
   width: 100%;
   height: 200px;
 }
 
-.section5 .title {
-  font-size: 18px;
+.home .section5 .head {
+  margin-bottom: 21px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.5em;
-  line-height: 1.4;
-  font-family: 'Dosis', sans-serif;
+  letter-spacing: 0.4em;
   color: #111;
+}
+
+.home .section5 .pragh {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.86;
+}
+
+.home .careers .text {
+  font-size: 15px;
+  font-weight: 300;
+  color: #777 !important;
+  line-height: 1.7;
+}
+
+.contactUs .heading {
+  margin-bottom: 1px;
+  color: #777;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.contactUs .pragh {
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 15px;
+  text-align: left;
+}
+
+.contactUs .map {
+  height: 350px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/*footer  */
+.foter {
+  background-color: #f5f6f7;
+  padding: 5%;
+}
+
+.foter ul {
+  list-style: none;
+  font-size: 20px;
+}
+
+.foter li {
+  display: inline-block;
+}
+
+.foter i {
+  font-size: 35px;
+  margin-right: 20px;
+  margin-top: 11px;
 }

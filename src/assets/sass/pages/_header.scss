@@ -18,6 +18,7 @@ body {
 .content{
   width: 100% !important ;
 }
+
 .list {
 
     display: inline-block;
@@ -62,6 +63,10 @@ body {
 .menu{
   display: none !important;
 }
+.imgApp{
+  display: none !important;
+
+}
 @media only screen and (max-width:763px){
   .list a{
     display:none
@@ -82,11 +87,18 @@ body {
     font-size: 23px;
   }
   .menu{
-  display: unset;
+  display: unset !important;
   float: right;
   font-size: 23px;
-  margin-top: 5px;
-  color: #75b239;
+  margin-top: 35px;
+  color: #ffff;
+}
+.image{
+  display: none !important;
+}
+.imgApp{
+  float: left;
+  display: unset !important;
 }
   
 }
