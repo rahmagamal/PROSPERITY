@@ -1,8 +1,13 @@
 module.exports = {
   presets: [
-    '@vue/cli-plugin-babel/preset'
+    ['@vue/cli-plugin-babel/preset',
+    {
+      transpileDependencies: ['x5-gmaps'],
+    }
+     
+  ]
     
     
   ],
-  transpileDependencies: ['x5-gmaps'],
+  
 }

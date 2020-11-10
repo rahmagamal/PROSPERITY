@@ -131,7 +131,7 @@
              <h2 class="title">products</h2>
                 <div class="row">
                   <div class="col-md-3 mt-3" v-for="img in image" :key="img+1" >
-                    <img  :src="img.img"  class="image" />
+                    <img  :src="img.img"  class="pic" />
                     <h6>{{img.text}}</h6>
                 
                   </div>
